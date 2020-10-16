@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos - FULL STACK ELETRO</title>
+    <link rel="stylesheet" href="./CSS/estilo.css">
+    <script src="./js/funcoes.js"></script>
+    </head>
+
+<body>
+    <!--Início menu-->
+    <nav class="menu">
+        <a href="index.html"> <img class="logo" src="./Imagens/full-stacklogo.jpg"> </a>
+        <a href="produtos.html">Produtos</a>
+        <a href="loja.html">Nossas Lojas</a>
+        <a href="contato.html">Contato</a>
+
+    </nav>
+    <!--Fim menu-->
+    <header>
+        <h2 id="titulo">Produtos</h2>
+    </header>
+
+    <hr>
+    <div class="categorias">
+
+        <h3 class="padding">
+           Categorias
+        </h3>
+        <ul class="list1">
+            <li class="destak" onmouseover="mudaCor(this)" onmouseout="mudaCor(this)" onclick="exibir_todos()" onmousemove="">
+                Todos (12)
+             </li>
+            <li class="destak" onmouseover="mudaCor(this)" onmouseout="mudaCor(this)" onclick="exibir_categoria('geladeira')" onmousemove="">
+               Geladeiras (3)
+            </li>
+            <li class="destak" onmouseover="mudaCor(this)" onmouseout="mudaCor(this)" onclick="exibir_categoria('fogao')" onmousemove="">
+               Fogões (2)
+            </li>
+            <li class="destak" onmouseover="mudaCor(this)" onmouseout="mudaCor(this)" onclick="exibir_categoria('microondas')" onmousemove="">
+               Microondas (3)
+            </li>
+            <li class="destak" onmouseover="mudaCor(this)" onmouseout="mudaCor(this)" onclick="exibir_categoria('lava_roupas')" onmousemove="">
+               Lavadora de roupas (2)
+            </li>
+            <li class="destak" onmouseover="mudaCor(this)" onmouseout="mudaCor(this)" onclick="exibir_categoria('lava_loucas')" onmousemove="">
+               Lava-Louças (2)
+            </li>
+        </ul>
+    </div>
+
+    <div class="produtos">
+
+        <div class="boxproduto" id="geladeira" >
+
+            <img src="./Imagens/geladeira.jpeg" width="120px" onclick="destaque (this)">
+            <p class="zirigui">Geladeira Brastemp Frost Free 375L</p>
+            <hr>
+            <P class="riscadin">R$6.389,00</P>
+            <p class="descritivo">R$5.019,00</p>
+        </div>
+
+        <div class="boxproduto" id="geladeira" >
+            <img src="./Imagens/geladeira2.jpeg" width="120px" onclick="destaque (this)">
+
+            <p class="zirigui">Refrigerador Frost Free Brastemp Side Inverse 540 L</p>
+            <hr>
+            <p class="riscadin">R$4.561,00</p>
+            <p class="descritivo">R$2.499,00</p>
+        </div>
+
+        <div class="boxproduto" id="geladeira" >
+            <img src="./Imagens/geladeira3.jpeg" width="120px" onclick="destaque (this)" >
+            <p class="zirigui">Refrigerador Consul Frost Free Evox - Duplex 386L </p>
+            <hr>
+            <p class="riscadin">R$5.189,00</p>
+            <p class="descritivo">R$3.599,00</p>
+        </div>
+
+        <div class="boxproduto" id="fogao" >
+            <img src="./Imagens/fogão.jpeg" width="120px"   onclick="destaque (this)">
+            <p class="zirigui">Fogão 4 Bcs Fratello Automático MuellerBranco</p>
+            <hr>
+            <p class="riscadin">R$1.999,00</p>
+            <p class="descritivo">R$1.019,00</p>
+        </div>
+
+        <div class="boxproduto" id="fogao" >
+
+            <img src="./Imagens/fogao2.jpeg" width="120px" onclick="destaque (this)" >
+            <p class="zirigui">Fogão 4 Bocas Consul Acendimento Automático</p>
+            <hr>
+            <p class="riscadin">R$2.299,00</p>
+            <p class="descritivo">R$1.699,00</p>
+        </div>
+
+
+
+        <div class="boxproduto" id="microondas" >
+            <img src="./Imagens/microondas.jpeg" width="120px" onclick="destaque (this)" >
+            <p class="zirigui">Micro-ondas 20L Electrolux MTO30 Branco</p>
+            <hr>
+            <p class="riscadin">R$899,00</p>
+            <p class="descritivo">R$619,00</p>
+        </div>
+
+        <div class="boxproduto" id="microondas" >
+            <img src="./Imagens/microondas2.jpeg" width="120px" onclick="destaque (this)" >
+            <p class="zirigui">Micro-ondas 38l brastemp ative inox</p>
+            <hr>
+            <p class="riscadin">R$2.050,00</p>
+            <p class="descritivo">R$1.719,00</p>
+        </div>
+
+
+        <div class="boxproduto" id="microondas"  >
+            <img src="./Imagens/microondas3.jpeg" width="120px" onclick="destaque (this)">
+            <p class="zirigui">Microondas Midea 31L Branco Espelhado MTFE 220V</p>
+            <hr>
+            <p class="riscadin">R$800,00</p>
+            <p class="descritivo">R$549,00</p>
+        </div>
+
+
+        <div class="boxproduto" id="lava_roupas"  >
+
+            <img src="./Imagens/lavadoura.jpeg" width="120px" onclick="destaque (this)">
+            <p class="zirigui">Lavadora de Roupas 9kg Brastemp - Ciclo Tira Manchas</p>
+            <hr>
+            <p class="riscadin">R$1.699,00</p>
+            <p class="descritivo">R$1.099,00</p>
+        </div>
+
+
+        <div class="boxproduto" id="lava_roupas"  >
+            <img src="./Imagens/lavadoura2.jpeg" width="120px" onclick="destaque (this)">
+            <p class="zirigui">Lavadora de Roupas LG Smart 11Kg 14 Programas de Lavagem</p>
+            <hr>
+            <p class="riscadin">R$2.199,00</p>
+            <p class="descritivo">R$1.499,00</p>
+        </div>
+
+        <div class="boxproduto" id="lava_loucas"   >
+            <img src="./Imagens/lavalouca.jpeg" width="120px" onclick="destaque (this)">
+            <p class="zirigui">Lava-Louças 8 Serviços Branco Electrolux (LL08B)</p>
+            <hr>
+            <p class="riscadin">R$4.500,00</p>
+            <p class="descritivo">R$3.500,00</p>
+        </div>
+
+        <div class="boxproduto" id="lava_loucas"  >
+            <img src="./Imagens/lavalouca2.jpeg" width="120px" onclick="destaque (this)">
+            <p class="zirigui">Lava-Louças 10 Serviços Inox Electrolux - 127V</p>
+            <hr>
+            <p class="riscadin">R$3.500,00</p>
+            <p class="descritivo">R$2.299,00</p>
+        </div>
+
+    </div>
+   
+
+    <footer class="rodape">
+
+        <p id="formas_de_pgmto">Formas de pagamento</p>
+        <img width="25%" src="./Imagens/kindpng_2824108.png">
+        <p> &copy; 2020 Recode Pro</p>
+    </footer>
+</body>
+
+</html>
